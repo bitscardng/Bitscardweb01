@@ -4,13 +4,14 @@
 
 
 :root{
-  --color-white: #E5E5E5;
+  --color-white:#ffffff;
+  --color-primary: #E5E5E5;
   --color-dark: #0F1122;
   --color-secWhite:#D1D0D0;
   --color-green:#47A348;
   --color-purple: #885DF5;
   --color-black:#000000;
-  
+
 
 }
 
