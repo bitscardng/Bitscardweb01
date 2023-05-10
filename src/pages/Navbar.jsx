@@ -30,12 +30,17 @@ const Navbar = () => {
             <ul className="p-2 px-2 bg-bg-white text-bg-black border border-bg-black font-normal z-10 ">
               <li>
                 <Link to="/product/virtual-account">
-                  <p>Virtual Card</p>
+                  <p>Virtual Master Card</p>
+                </Link>
+              </li>{" "}
+              <li>
+                <Link to="/product/gift-card">
+                  <p>Gift Card</p>
                 </Link>
               </li>
               <li>
-                <Link to="/product/buycrypto">
-                  <p>Crypto Card</p>
+                <Link to="/product/cryptocurrency">
+                  <p>Cryptocurrency</p>
                 </Link>
               </li>
               <li>

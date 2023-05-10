@@ -20,7 +20,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/product/virtual-account" element={<VirtualCard />} />
-          <Route path="/product/buycrypto" element={<CryptoCard />} />
+          <Route path="/product/cryptocurrency" element={<CryptoCard />} />
           <Route path="/product/global-account" element={<GlobalAcc />} />
           <Route path="/about" element={<About />} />
         </Routes>
