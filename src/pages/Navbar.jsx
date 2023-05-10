@@ -56,7 +56,7 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end mr-2">
-        <div className="flex text-end justify-center items-center border-l-2 border-bg-black py-2">
+        <div className="flex text-end justify-center items-center border-l-4 border-bg-black py-2">
           <Link className="text-center bg-bg-white p-2">Join Our Telegram</Link>
           <Link className="bg-bg-black text-bg-white text-center p-2">
             Download
