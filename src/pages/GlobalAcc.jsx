@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const GlobalAcc = () => {
-  return (
-    <div>GlobalAcc</div>
-  )
-}
+  return <div>GlobalAcc</div>;
+};
 
-export default GlobalAcc
+export default GlobalAcc;

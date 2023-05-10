@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className="navbar bg-bg-white border-bg-black border-b-4 font-bold p-0">
+    <div className="navbar bg-bg-white border-bg-black border-b-4 font-bold p-0 fixed z-50 ">
       <div className="navbar-start ml-2">
         <Link to="/" className="normal-case text-xl">
           bitscard.<span className="bg-[]">co</span>
@@ -51,7 +51,7 @@ const Navbar = () => {
             </ul>
           </li>
           <li>
-            <Link>About</Link>
+            <Link to='/about'>About</Link>
           </li>
         </ul>
       </div>

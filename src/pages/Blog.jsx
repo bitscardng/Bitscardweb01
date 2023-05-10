@@ -2,7 +2,7 @@ import React from 'react'
 
 const Blog = () => {
   return (
-    <div>Blog</div>
+    <div className='pt-6 max-h-screen'>Blog</div>
   )
 }
 

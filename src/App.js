@@ -4,7 +4,6 @@ import {
   Blog,
   Home,
   Navbar,
-  Product,
   Footer,
   VirtualCard,
   CryptoCard,
@@ -20,6 +19,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/about" element={<About />} />
           <Route path="/product/virtual-account" element={<VirtualCard />} />
           <Route path="/product/cryptocurrency" element={<CryptoCard />} />
           <Route path="/product/global-account" element={<GlobalAcc />} />
