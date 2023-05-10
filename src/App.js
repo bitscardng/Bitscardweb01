@@ -9,6 +9,7 @@ import {
   VirtualCard,
   CryptoCard,
   GlobalAcc,
+  GiftCard,
 } from "./pages";
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <Route path="/product/virtual-account" element={<VirtualCard />} />
           <Route path="/product/cryptocurrency" element={<CryptoCard />} />
           <Route path="/product/global-account" element={<GlobalAcc />} />
+          <Route path="/product/gift-card" element={<GiftCard />} />
           <Route path="/about" element={<About />} />
         </Routes>
         <Footer />

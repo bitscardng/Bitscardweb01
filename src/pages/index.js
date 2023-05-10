@@ -7,5 +7,6 @@ import Footer from "./Footer";
 import GlobalAcc from "./GlobalAcc";
 import CryptoCard from "./CryptoCard";
 import VirtualCard from "./VirtualCard";
+import GiftCard from "./GiftCard";
 
-export { Navbar, Home, About, Blog, Product, Footer, GlobalAcc, CryptoCard, VirtualCard, };
+export { Navbar, Home, About, Blog, Product, Footer, GlobalAcc, CryptoCard, VirtualCard, GiftCard };
