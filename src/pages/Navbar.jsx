@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className="navbar bg-bg-white border-bg-black border-b-4 font-bold">
-      <div className="navbar-start">
+    <div className="navbar bg-bg-white border-bg-black border-b-4 font-bold p-0">
+      <div className="navbar-start ml-2">
         <Link to="/" className="normal-case text-xl">
           bitscard.<span className="bg-[]">co</span>
         </Link>
@@ -27,7 +27,7 @@ const Navbar = () => {
                 <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
               </svg>
             </p>
-            <ul className="p-2 px-2 bg-bg-white text-bg-black border border-bg-black font-normal">
+            <ul className="p-2 px-2 bg-bg-white text-bg-black border border-bg-black font-normal z-10 ">
               <li>
                 <Link to="/product/virtual-account">
                   <p>Virtual Card</p>
@@ -50,10 +50,10 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-      <div className="navbar-end">
+      <div className="navbar-end mr-2">
         <div className="flex text-end justify-center items-center border-l-2 border-bg-black py-2">
           <Link className="text-center bg-bg-white p-2">Join Our Telegram</Link>
-          <Link className="bg-bg-black text-bg-white text-center p-2 ">
+          <Link className="bg-bg-black text-bg-white text-center p-2">
             Download
           </Link>
         </div>

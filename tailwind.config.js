@@ -6,7 +6,6 @@ module.exports = {
       colors: {
         "bg-white": "var(--color-white)",
         "bg-dark": "var(--color-dark)",
-        "bg-green": "var(--color-green)",
         "bg-black": "var(--color-black)",
       },
     },
