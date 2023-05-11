@@ -1,8 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { iPhone_13_Pro, earth, iPhone13 } from "../assests";
+import {
+  iPhone_13_Pro,
+  earth,
+  iPhone13,
+  bitcion,
+  upwork,
+  freelancer,
+} from "../assests";
 import { IoLogoGooglePlaystore } from "react-icons/io5";
-import { FaApple } from "react-icons/fa";
+import { FaApple, FaBitcoin, FaChevronCircleDown } from "react-icons/fa";
 
 const Home = () => {
   return (
@@ -12,7 +19,7 @@ const Home = () => {
         <div className="max-h-screen bg-bg-white relative px-4 pt-6">
           <div className="flex-row-reverse ">
             <div className="relative top-40">
-              <div className="absolute w-[420px] right-6 bg-[#885DF5] z-10 h-[380px] border border-bg-black">
+              <div className="absolute w-[420px] right-4 bg-[#885DF5] z-10 h-[380px] border border-bg-black">
                 <img
                   src={iPhone_13_Pro}
                   alt="phones"
@@ -32,7 +39,7 @@ const Home = () => {
                   account, gift cards and crypto trading...
                 </p>
               </div>
-              <div className=" relative">
+              <div className="relative">
                 <div className="absolute w-[360px] p-0 bg-[#D9D9D9] z-10 h-[320px] border border-bg-black text-center items-center justify-center font-semibold">
                   <p className="p-2 bg-[#219DFC] font-bold">EXCHANGE RATE</p>
                   <div className="py-8">
@@ -58,13 +65,13 @@ const Home = () => {
           <div className="flex justify-between px-6 mt-96 pb-4">
             <div className="flex gap-36 justify-between">
               <div className="relative">
-                <button className="absolute border w-[6pc] border-bg-black h-[3pc] z-10 bg-[#767DFF]">
+                <button className="absolute text-center border w-[6pc] border-bg-black h-[3pc] z-10 bg-[#767DFF]">
                   <div></div> 730/$
                 </button>
                 <div className="absolute w-[6pc] bg-[#000] h-[3pc] top-1 left-1 border border-bg-black"></div>
               </div>
               <div className="relative">
-                <button className="absolute border w-[6pc] border-bg-black h-[3pc] z-10 bg-[#767DFF]">
+                <button className="absolute text-center border w-[6pc] border-bg-black h-[3pc] z-10 bg-[#767DFF]">
                   <div></div> 728/$
                 </button>
                 <div className="absolute w-[6pc] bg-[#000] h-[3pc] top-1 left-1 border border-bg-black"></div>
@@ -119,7 +126,7 @@ const Home = () => {
               <div className="relative">
                 <Link
                   to="/product/global-account"
-                  className="absolute border p-2 w-[11pc] border-bg-black h-[3pc] z-10 bg-[#767dff] mt-2"
+                  className="absolute text-center border p-2 w-[11pc] border-bg-black h-[3pc] z-10 bg-[#767dff] mt-2"
                 >
                   Open a free account
                 </Link>
@@ -155,7 +162,7 @@ const Home = () => {
               <div className="relative">
                 <Link
                   to="/product/virtual-account"
-                  className="absolute border p-2 w-[10pc] border-bg-black h-[3pc] z-10 bg-[#F7931A]  mt-2"
+                  className="absolute text-center border p-2 w-[10pc] border-bg-black h-[3pc] z-10 bg-[#F7931A]  mt-2"
                 >
                   Create virtual card
                 </Link>
@@ -167,7 +174,7 @@ const Home = () => {
       </section>
 
       {/* Trading section*/}
-      <section className="py-10">
+      <section className="py-2">
         <div className="bg-[#D1D0D0] px-12">
           <div className="flex flex-row h-[540px] justify-between items-center">
             <div className="relative">
@@ -182,7 +189,7 @@ const Home = () => {
             </div>
             <div className="text-left w-[409px] lg:w-[609] pt-4">
               <h1 className="text-3xl font-bold">
-                Trade crypto & Gift card <div></div>
+                Trade crypto<div></div>
               </h1>
               <p className="py-2 font-semibold">
                 Buy, sell, send and receive crypto , you can also buy or sell
@@ -191,12 +198,141 @@ const Home = () => {
               <div className="relative">
                 <Link
                   to="/product/gift-card"
-                  className="absolute border p-2 w-[8pc] border-bg-black h-[3pc] z-10 bg-[#47A348] mt-2"
+                  className="absolute text-center border p-2 w-[8pc] border-bg-black h-[3pc] z-10 bg-[#47A348] mt-2"
                 >
                   Start trading
                 </Link>
                 <div className="absolute w-[8pc] bg-[#000] h-[3pc] top-4 left-2 border border-bg-black"></div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Create bitcoin card section*/}
+      <section className="py-2 relative h-screen mt-12">
+        <div className=" px-12">
+          <div className="flex flex-row-reverse h-[540px] justify-between">
+            <div className="flex flex-col gap-8 items-center">
+              <div className="text-bg-white flex gap-4 ">
+                <Link className="bg-bg-black flex text-center items-center gap-2 p-1">
+                  <IoLogoGooglePlaystore />
+                  Google play
+                </Link>
+                <Link className="bg-bg-black flex text-center items-center gap-2 p-1">
+                  <FaApple />
+                  App store
+                </Link>
+              </div>
+
+              <div className="relative -left-[15rem]">
+                <div className="absolute w-[360px] p-0 bg-[#D9D9D9] z-10 h-[520px] border border-bg-black text-center items-center justify-center font-semibold">
+                  <div className="flex w-full">
+                    <p className="p-2 bg-[#F7931A] w-full border border-bg-black py-4 font-bold">
+                      EXCHANGE RATE
+                    </p>
+                    <p className="p-2 bg-[#767DFF] w-full border border-bg-black py-4 font-bold">
+                      CRYPTO RATE
+                    </p>
+                  </div>
+                  <div className="flex w-full py-2 justify-around">
+                    <p className="p-2 bg-[#EB6A98] px-8 border border-bg-black py-2 font-bold">
+                      BUY
+                    </p>
+                    <p className="p-2 bg-[#18BBFE] px-8 border border-bg-black py-2 font-bold">
+                      SELL
+                    </p>
+                  </div>
+                  <div className="py-8">
+                    <div className="flex justify-between p-2 border border-bg-black m-2">
+                      <div className="flex gap-2 items-center">
+                        <FaBitcoin className="text-[#F7931A] text-2xl" />
+                        <p>BTC</p>
+                        <FaChevronCircleDown className="text-[#F7931A] cursor-pointer" />
+                      </div>
+                      <p>100.43</p>
+                    </div>
+                    Rate {"740"}/$
+                    <div className="flex justify-between p-2 border border-bg-black m-2">
+                      <div className="flex gap-2 items-center">
+                        <FaBitcoin className="text-[#F7931A] text-2xl" />
+                        <p>NGN</p>
+                        <FaChevronCircleDown className="text-[#F7931A] cursor-pointer" />
+                      </div>
+                      <p>{"NGN 63,433.43"}</p>
+                    </div>
+                    <p className="p-2 items-center text-justify border mx-2 my-4 border-bg-black">
+                      Exchange rates are volatile right now, so we can't
+                      guarantee this rate. We'll use the rate that's live when
+                      we receive your money.
+                    </p>
+                    <button className="border p-2 border-bg-black bg-[#47A348] mt-2">
+                      Get started
+                    </button>
+                  </div>
+                </div>
+                <div className="absolute w-[360px] left-4 top-4 bg-[#000] h-[520px] border border-bg-black"></div>
+              </div>
+            </div>
+
+            <div className="text-left w-[409px] lg:w-[609] flex flex-col gap-8">
+              <div className="relative border border-bg-black p-2 pl-4 pt-14 mt-8 bg-[#5FC88F]">
+                <img
+                  src={bitcion}
+                  alt="coin"
+                  className="absolute -top-16 right-8 w-32"
+                />
+                <h5 className="text-2xl font-bold pt-4">
+                  Virtual card funding
+                </h5>
+                <p className="font-semibold text-left my-2">
+                  You can now create and fund your virtual mastercard with
+                  crypto at zero cost.
+                </p>
+              </div>
+              <div>
+                <div className="relative border border-bg-black p-2 pl-4 pt-14 mt-8 bg-[#F7931A]">
+                  <img
+                    src={upwork}
+                    alt="coin"
+                    className="absolute -top-10 left-8 w-32"
+                  />
+                  <img
+                    src={freelancer}
+                    alt="coin"
+                    className="absolute -top-0 right-8 w-40"
+                  />
+                  <h5 className="text-2xl font-bold">
+                    Receive payment from foreign employers
+                  </h5>
+                  <p className="font-semibold text-left my-2">
+                    Freelancer, remote worker or corporate employee? Get paid
+                    fast and securely!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* three phone section*/}
+      <section className="py-2 pb-20">
+        <div className=" px-12">
+          <div className=""></div>
+          
+          <div className="flex flex-row gap-10">
+            <div className="font-semibold text-justify">
+              <h2 className="text-2xl text-center">Spend</h2>
+              With our virtual master card you have no spend limit.
+            </div>
+            <div className="font-semibold text-justify">
+              <h2 className="text-2xl text-center">Bank</h2>
+              Send and receive payment anywhere in the world with your USD, GBP & EURO account.
+            </div>
+            <div className="font-semibold text-justify">
+              <h2 className="text-2xl text-center">Trade</h2>
+              Buy, sell and receive crypto also buy and sell your giftcards.
             </div>
           </div>
         </div>
