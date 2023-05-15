@@ -16,8 +16,10 @@ import vmastercard from "./vmastercard.png";
 import mastercardlogo from "./mastercardlogo.png";
 import tbitcoin from "./tbitcoin.png";
 import tradecrypto from "./tradecrypto.png";
+import phones from "./phones.png";
 
 export {
+  phones,
   tradecrypto,
   tbitcoin,
   mastercardlogo,

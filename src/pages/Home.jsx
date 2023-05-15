@@ -16,6 +16,7 @@ import {
   mastercardlogo,
   tbitcoin,
   tradecrypto,
+  phones,
 } from "../assests";
 import { IoLogoGooglePlaystore } from "react-icons/io5";
 import { FaApple, FaBitcoin, FaChevronCircleDown } from "react-icons/fa";
@@ -180,7 +181,7 @@ const Home = () => {
       </section>
 
       {/* Create bitcoin card section*/}
-      <section className="relative h-screen py-2 mt-12">
+      {/* <section className="relative h-screen py-2 mt-12">
         <div className="px-12 ">
           <div className="flex flex-row-reverse h-[540px] justify-between">
             <div className="flex flex-col items-center gap-8">
@@ -250,7 +251,7 @@ const Home = () => {
                 <img
                   src={bitcionCard}
                   alt="coin"
-                  className="absolute -top-24 right-2 max-w-[340px] hidden "
+                  className="absolute -top-24 right-2 max-w-[340px]"
                 />
                 <h5 className="pt-4 text-2xl font-bold">
                   Virtual card funding
@@ -265,12 +266,12 @@ const Home = () => {
                   <img
                     src={upwork}
                     alt="coin"
-                    className="absolute hidden w-32 -top-10 left-8"
+                    className="absolute w-32 -top-10 left-8"
                   />
                   <img
                     src={freelancer}
                     alt="coin"
-                    className="absolute hidden w-40 -top-0 right-8"
+                    className="absolute w-40 -top-0 right-8"
                   />
                   <h5 className="text-2xl font-bold">
                     Receive payment from foreign employers
@@ -284,30 +285,30 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* three phone section*/}
-      {/* <section className="py-2 pb-20">
-        <div className="px-12 ">
-          <div className=""></div>
+      <section className="py-2 pb-20">
+        <div className="flex flex-col items-center justify-center px-12">
+          <img src={phones} alt="phone" />
 
           <div className="flex flex-row gap-10">
-            <div className="font-semibold text-justify">
+            <div className="font-semibold md:text-justify">
               <h2 className="text-2xl text-center">Spend</h2>
               With our virtual master card you have no spend limit.
             </div>
-            <div className="font-semibold text-justify">
+            <div className="font-semibold md:text-justify">
               <h2 className="text-2xl text-center">Bank</h2>
               Send and receive payment anywhere in the world with your USD, GBP
               & EURO account.
             </div>
-            <div className="font-semibold text-justify">
+            <div className="font-semibold md:text-justify">
               <h2 className="text-2xl text-center">Trade</h2>
               Buy, sell and receive crypto also buy and sell your giftcards.
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
     </div>
   );
 };
