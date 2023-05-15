@@ -9,52 +9,52 @@ import {
   FaApple,
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { logo } from "../assests";
 
 const Footer = () => {
   return (
-    <div className="bg-bg-white  pt-8 ">
-      <div className="flex items-center justify-between border-b-4 border-bg-black">
-        <div className="pl-4">
-          <p className="font-semibold">
-            Stay updated with Bitscard by signing up for our newsletter
-          </p>
-          <div className="bg-bg-white py-2">
-            <input
-              type="email"
-              placeholder="Enter your email"
-              className="bg-bg-white border border-bg-black p-2 w-80"
-            />
-            <button className="bg-[#F7931A] border border-bg-black p-2 px-4 font-bold">
-              Subscribe
-            </button>
+    <div className="pt-8 bg-bg-white ">
+      <div className="border-b-4 border-bg-black">
+        <div className="flex flex-col items-start justify-between gap-4 px-4 pb-4 lg:flex-row lg:items-center">
+          <div>
+            <p className="">
+              Stay updated with Bitscard by signing up for our newsletter
+            </p>
+            <div className="flex w-full py-2 bg-bg-white">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                className="w-full p-2 border bg-bg-white border-bg-black"
+              />
+              <button className="bg-[#F7931A] border border-bg-black p-2 px-4 font-bold">
+                Subscribe
+              </button>
+            </div>
           </div>
-        </div>
-        <div className="pr-4">
-          <div className="flex justify-between text-2xl">
-            <SiTelegraph />
-            <SiLinkedin />
-            <FaTwitterSquare />
-            <FaFacebookSquare />
-            <FaInstagramSquare />
-          </div>
-          <div className="text-bg-white flex gap-4 mt-2 ">
-            <Link className="bg-bg-black flex text-center items-center gap-2 p-1">
-              <IoLogoGooglePlaystore />
-              Google play
-            </Link>
-            <Link className="bg-bg-black flex text-center items-center gap-2 p-1">
-              <FaApple />
-              App store
-            </Link>
+          <div className="flex flex-col gap-2">
+            <div className="flex items-center gap-1">
+              <SiTelegraph size={26}/>
+              <SiLinkedin size={26}/>
+              <FaTwitterSquare size={26}/>
+              <FaFacebookSquare size={26}/>
+              <FaInstagramSquare size={26}/>
+            </div>
+            <div className="flex gap-1 text-bg-white">
+              <Link className="flex items-center gap-2 p-1 text-center bg-bg-black">
+                <IoLogoGooglePlaystore />
+                Google play
+              </Link>
+              <Link className="flex items-center gap-2 p-1 text-center bg-bg-black">
+                <FaApple />
+                App store
+              </Link>
+            </div>
           </div>
         </div>
       </div>
-      <footer className="footer p-10 border border-bg-black text-bg-black px-4">
-        <Link to="/" className="flex">
-          <img alt="logo" />
-          <p className="pl-2 text-bg-black font-bold">
-            bitcard.<span className="text-[blue]">co</span>
-          </p>
+      <footer className="p-10 px-4 border footer border-bg-black text-bg-black">
+        <Link to="/">
+          <img src={logo} alt="logo" className="h-10"/>
         </Link>
         <div>
           <span className="footer-title">Product</span>
@@ -93,7 +93,7 @@ const Footer = () => {
           <p>18 Admiralty way lekki, Lagos</p>
         </div>
       </footer>
-      <div className="p-4 pb-8 text-left leading-relaxed">
+      <div className="p-4 pb-8 leading-relaxed text-left">
         <p>
           * Bitscard offers its products and services in partnership with
           licensed transmitters in their respective jurisdictions.

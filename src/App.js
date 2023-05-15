@@ -14,7 +14,7 @@ import {
 function App() {
   return (
     <BrowserRouter>
-      <div className="relative z-0 bg-bg-white text-bg-black font">
+      <div className="relative z-0 font-semibold bg-bg-white text-bg-black">
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />

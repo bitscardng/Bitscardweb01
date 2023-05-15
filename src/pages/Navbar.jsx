@@ -1,16 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import {logo
+} from "../assests";
 
 const Navbar = () => {
   return (
-    <div className="navbar bg-bg-white border-bg-black border-b-4 font-bold p-0 fixed z-50 ">
-      <div className="navbar-start ml-2">
-        <Link to="/" className="normal-case text-xl">
-          bitscard.<span className="bg-[]">co</span>
+    <div className="fixed z-50 p-0 font-bold border-b-4 navbar bg-bg-white border-bg-black ">
+      <div className="ml-2 navbar-start">
+        <Link to="/" className="text-xl normal-case">
+          <img src={logo} alt="" className="h-8" />
         </Link>
       </div>
       <div className="navbar-center">
-        <ul className="menu menu-horizontal px-1">
+        <ul className="px-1 menu menu-horizontal">
           <li>
             <Link to="/blog">Blog</Link>
           </li>
@@ -27,7 +29,7 @@ const Navbar = () => {
                 <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
               </svg>
             </p>
-            <ul className="p-2 px-2 bg-bg-white text-bg-black border border-bg-black font-normal z-10 ">
+            <ul className="z-10 p-2 px-2 font-normal border bg-bg-white text-bg-black border-bg-black ">
               <li>
                 <Link to="/product/virtual-account">
                   <p>Virtual Master Card</p>
@@ -55,10 +57,10 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-      <div className="navbar-end mr-2">
-        <div className="flex text-end justify-center items-center border-l-4 border-bg-black py-2">
-          <Link className="text-center bg-bg-white p-2">Join Our Telegram</Link>
-          <Link className="bg-bg-black text-bg-white text-center p-2">
+      <div className="mr-2 navbar-end">
+        <div className="flex items-center justify-center py-2 border-l-4 text-end border-bg-black">
+          <Link className="p-2 text-center bg-bg-white">Join Our Telegram</Link>
+          <Link className="p-2 text-center bg-bg-black text-bg-white">
             Download
           </Link>
         </div>
