@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import {
   iPhone_13_Pro,
   hero1,
-  bitcion,
+  bitcionCard,
   upwork,
   freelancer,
   xchange1,
@@ -14,6 +14,8 @@ import {
   globalacc,
   vmastercard,
   mastercardlogo,
+  tbitcoin,
+  tradecrypto,
 } from "../assests";
 import { IoLogoGooglePlaystore } from "react-icons/io5";
 import { FaApple, FaBitcoin, FaChevronCircleDown } from "react-icons/fa";
@@ -60,8 +62,8 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="flex flex-col justify-between px-6 py-4 lg:flex-row">
-          <div className="flex gap-4">
+        <div className="flex flex-row justify-between px-2 py-4 lg:px-6">
+          <div className="flex gap-1 lg:gap-4">
             <div className="shadow-2xl bg-[#767DFF] flex items-center p-1 px-2 gap-2">
               <img src={usdt} />
               {"730/$"}
@@ -72,7 +74,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="flex gap-4 text-bg-white ">
+          <div className="flex gap-1 lg:gap-4 text-bg-white ">
             <Link className="flex items-center gap-2 p-1 text-center bg-bg-black">
               <IoLogoGooglePlaystore />
               Google play
@@ -93,19 +95,19 @@ const Home = () => {
 
       {/* Global account section*/}
       <section className="py-10">
-        <p className="text-center pt-6 pb-2 text-[50px]">
-          One platform{" "}
-          <span className="font-extrabold">for all transaction</span>
+        <p className="pt-6 pb-2 text-5xl text-center">
+          One platform
+          <span className="pl-2 font-extrabold">for all transaction</span>
         </p>
 
-        <div className="bg-[#D1D0D0] px-12 hero pb-6">
+        <div className="bg-[#D1D0D0] px-12 hero pb-16">
           <div className="flex-col hero-content lg:flex-row">
             <img src={globalacc} alt="gloacc" className="max-w-sm" />
             <div className="">
               <h1 className="text-3xl font-bold">
                 Open global accounts <div></div>
               </h1>
-              <p className="py-2 ">
+              <p className="py-2">
                 Open a US Dollar, Nigerian Naira, Canadian Dollar, UK Pounds
                 account in less than 5 minutes.
               </p>
@@ -129,7 +131,7 @@ const Home = () => {
           <div className="flex-col hero-content lg:flex-row-reverse">
             <img src={vmastercard} alt="vm" className="max-w-sm" />
             <div className="">
-              <h1 className="flex gap-2 text-3xl font-bold">
+              <h1 className="flex items-center gap-2 text-3xl font-bold">
                 Virtual master card <img src={mastercardlogo} alt="mastcard" />
               </h1>
               <p className="py-2 font-semibold">
@@ -151,24 +153,15 @@ const Home = () => {
       </section>
 
       {/* Trading section*/}
-      {/* <section className="py-2">
-        <div className="bg-[#D1D0D0] px-12">
-          <div className="flex flex-row h-[540px] justify-between items-center">
-            <div className="relative">
-              <div className="absolute w-[420px] -top-40 bg-[#767dff] z-10 h-[380px] border border-bg-black">
-                <img
-                  src={iPhone_13_Pro}
-                  alt="phones"
-                  className="absolute max-w-sm -top-32 right-2"
-                />
-              </div>
-              <div className="absolute w-[420px] left-4 -top-36 bg-[#000] h-[380px] border border-bg-black"></div>
-            </div>
-            <div className="text-left w-[409px] lg:w-[609] pt-4">
-              <h1 className="text-3xl font-bold">
-                Trade crypto<div></div>
+      <section className="py-10">
+        <div className="bg-[#D1D0D0] px-12 hero pb-16">
+          <div className="flex-col hero-content lg:flex-row">
+            <img src={tradecrypto} alt="gloacc" className="max-w-sm" />
+            <div className="">
+              <h1 className="flex items-center gap-2 text-3xl font-bold">
+                Trade crypto <img src={tbitcoin} alt="mastcard" />
               </h1>
-              <p className="py-2 font-semibold">
+              <p className="py-2">
                 Buy, sell, send and receive crypto , you can also buy or sell
                 your favorite gift card with us today
               </p>
@@ -184,14 +177,14 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* Create bitcoin card section*/}
-      {/* <section className="relative h-screen py-2 mt-12">
+      <section className="relative h-screen py-2 mt-12">
         <div className="px-12 ">
           <div className="flex flex-row-reverse h-[540px] justify-between">
             <div className="flex flex-col items-center gap-8">
-              <div className="flex gap-4 text-bg-white ">
+              <div className="flex gap-1 lg:gap-4 text-bg-white ">
                 <Link className="flex items-center gap-2 p-1 text-center bg-bg-black">
                   <IoLogoGooglePlaystore />
                   Google play
@@ -203,7 +196,7 @@ const Home = () => {
               </div>
 
               <div className="relative -left-[15rem]">
-                <div className="absolute w-[360px] p-0 bg-[#D9D9D9] z-10 h-[520px] border border-bg-black text-center items-center justify-center font-semibold">
+                <div className="absolute w-[360px] p-0 bg-[#D9D9D9] z-10 h-[520px] border border-bg-black text-center items-center justify-center">
                   <div className="flex w-full">
                     <p className="p-2 bg-[#F7931A] w-full border border-bg-black py-4 font-bold">
                       EXCHANGE RATE
@@ -212,7 +205,7 @@ const Home = () => {
                       CRYPTO RATE
                     </p>
                   </div>
-                  <div className="flex justify-around w-full py-2">
+                  <div className="flex items-center justify-center w-full">
                     <p className="p-2 bg-[#EB6A98] px-8 border border-bg-black py-2 font-bold">
                       BUY
                     </p>
@@ -221,7 +214,7 @@ const Home = () => {
                     </p>
                   </div>
                   <div className="py-8">
-                    <div className="flex justify-between p-2 m-2 border border-bg-black">
+                    <div className="flex justify-between p-2 m-2 border border-bg-black bg-bg-white">
                       <div className="flex items-center gap-2">
                         <FaBitcoin className="text-[#F7931A] text-2xl" />
                         <p>BTC</p>
@@ -230,7 +223,7 @@ const Home = () => {
                       <p>100.43</p>
                     </div>
                     Rate {"740"}/$
-                    <div className="flex justify-between p-2 m-2 border border-bg-black">
+                    <div className="flex justify-between p-2 m-2 border border-bg-black bg-bg-white">
                       <div className="flex items-center gap-2">
                         <FaBitcoin className="text-[#F7931A] text-2xl" />
                         <p>NGN</p>
@@ -238,7 +231,7 @@ const Home = () => {
                       </div>
                       <p>{"NGN 63,433.43"}</p>
                     </div>
-                    <p className="items-center p-2 mx-2 my-4 text-justify border border-bg-black">
+                    <p className="items-center p-2 mx-2 my-4 text-justify border border-bg-black bg-bg-white">
                       Exchange rates are volatile right now, so we can't
                       guarantee this rate. We'll use the rate that's live when
                       we receive your money.
@@ -255,9 +248,9 @@ const Home = () => {
             <div className="text-left w-[409px] lg:w-[609] flex flex-col gap-8">
               <div className="relative border border-bg-black p-2 pl-4 pt-14 mt-8 bg-[#5FC88F]">
                 <img
-                  src={bitcion}
+                  src={bitcionCard}
                   alt="coin"
-                  className="absolute w-32 -top-16 right-8"
+                  className="absolute -top-24 right-2 max-w-[340px] hidden "
                 />
                 <h5 className="pt-4 text-2xl font-bold">
                   Virtual card funding
@@ -272,12 +265,12 @@ const Home = () => {
                   <img
                     src={upwork}
                     alt="coin"
-                    className="absolute w-32 -top-10 left-8"
+                    className="absolute hidden w-32 -top-10 left-8"
                   />
                   <img
                     src={freelancer}
                     alt="coin"
-                    className="absolute w-40 -top-0 right-8"
+                    className="absolute hidden w-40 -top-0 right-8"
                   />
                   <h5 className="text-2xl font-bold">
                     Receive payment from foreign employers
@@ -291,7 +284,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* three phone section*/}
       {/* <section className="py-2 pb-20">

@@ -1,7 +1,7 @@
 import iPhone_13_Pro from "./iPhone_13_Pro.png";
 import iPhone13 from "./iPhone13.jpg";
 import earth from "./earth.jpg";
-import bitcion from "./bitcoin.png";
+import bitcionCard from "./bitcionCard.png";
 import upwork from "./upwork.png";
 import freelancer from "./freelancer.png";
 import hero1 from "./hero1.png";
@@ -14,8 +14,12 @@ import blackthorn from "./blackthorn.png";
 import globalacc from "./globalacc.png";
 import vmastercard from "./vmastercard.png";
 import mastercardlogo from "./mastercardlogo.png";
+import tbitcoin from "./tbitcoin.png";
+import tradecrypto from "./tradecrypto.png";
 
 export {
+  tradecrypto,
+  tbitcoin,
   mastercardlogo,
   vmastercard,
   globalacc,
@@ -26,7 +30,7 @@ export {
   iPhone_13_Pro,
   iPhone13,
   earth,
-  bitcion,
+  bitcionCard,
   upwork,
   freelancer,
   hero1,
